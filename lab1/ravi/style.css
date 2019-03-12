@@ -1,0 +1,16 @@
+
+.row img{
+    width: 90%;
+    padding: 10%;
+    padding-bottom: 2%;
+}
+.row {
+    background-color: #000;
+    color : #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3{
+    text-align: center;
+}
