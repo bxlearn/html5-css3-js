@@ -11,7 +11,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1 class="text-center">Hello, world!</h1>
+
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <nav>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">One</a></li>
+              <li class="breadcrumb-item"><a href="#">Two</a></li>
+              <li class="breadcrumb-item active">Three</li>
+            </ul>
+          </nav>
+    </div>
 
     <div class="jumbotron text-center">
       <h1>My First Bootstrap Page</h1>
@@ -19,12 +30,12 @@
     </div>
 
     <div class="container">
-      <p>Fixed width container: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <p><strong>Fixed width container:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </p>
     </div>
 
     <div class="container-fluid">
-      <p></p>Fluid container: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      <p><strong>Fluid container:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p>
     </div>
 
@@ -32,6 +43,14 @@
     </br>
 
     <div class="container">
+      <!-- Alerts -->
+      <div class="alert alert-primary">This is a primary alert!</div>
+      <div class="alert alert-secondary">This is a primary alert!</div>
+      <div class="alert alert-warning">This is a primary alert!</div>
+      <div class="alert alert-light">This is a primary alert!</div>
+      <div class="alert alert-dark">This is a primary alert!</div>
+      <div class="alert alert-info">This is a primary alert!</div>
+      
       <div class="row">
         <div class="col-sm-4">
           <h3>Column 1</h3>
@@ -49,6 +68,72 @@
           <p>Ut enim ad..</p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Column 3</h3> 
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3> 
+          <p>Lorem ipsum dolor..</p>
+          <p>Ut enim ad..</p>
+        </div>
+      </div>
+
+      <!-- Accordions -->
+      <div class="container">
+        <div class="accordion" id="firstBootstrap">
+          <!-- One -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2>
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Terms 1</button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#firstBootstrap">
+                <div class="card-body">Yay! You got it...</div>
+            </div>
+          </div>
+          <!-- Two -->
+          <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2>
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">Terms 2</button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" data-parent="#firstBootstrap">
+                  <div class="card-body">You got it again...</div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+      <br/>
+      <!-- Buttons -->
+      <button class="btn btn-primary">Submit</button>
     </div>
 
     <!-- Optional JavaScript -->
