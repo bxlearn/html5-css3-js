@@ -12,6 +12,15 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
+    <div class = "container">
+      <nav>
+        <ul class = "breadcrumb">
+          <li class="breadcrumb-item"><a href = "#">One</a></li>
+          <li class="breadcrumb-item"><a href = "#">Two</a></li>
+          <li class="breadcrumb-item"><a href = "#">Three</a></li>
+        </ul>
+      </nav>
+    </div>    
 
     <div class="jumbotron text-center">
       <h1>My First Bootstrap Page -- Worked by Swapnil</h1>
@@ -22,13 +31,14 @@
       <div class="row">
         <div class="col-sm-4">
           <h3>Column 1</h3>
-          <p>Lorem ipsum dolor..</p>
-          <p>Ut enim ad..</p>
+          <p>THIS IS FIRST PARA</p>
+          <p>THIS IS 2nd PARA FOR COLUMN 1 <ad class=""></ad></p>
         </div>
+
         <div class="col-sm-4">
           <h3>Column 2</h3>
-          <p>Lorem ipsum dolor..</p>
-          <p>Ut enim ad..</p>
+          <p>THIS IS FIRST for 2nd COLUMN PARA</p>
+          <p>THIS IS 2nd PARA for 2nd COLUMN</p>
         </div>
         <div class="col-sm-4">
           <h3>Column 3</h3> 
@@ -37,6 +47,21 @@
         </div>
       </div>
     </div>
+
+    <!-- Accordian -->
+    <div>
+      <div class ="accordian" id="firstAccordian">
+        <div class="anzTrial">
+          <div class="anzTrial-header" id="headerTrial">
+            <h2>
+              <button class = "btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne">Accordian 1</button>
+            </h2>
+          <div id="collapseOne" class="collapse show" data-parent="#firstAccordian">The text for the accordian goes here</div>
+        </div>  
+      </div>
+    
+      
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
